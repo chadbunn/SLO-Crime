@@ -25,7 +25,7 @@ with open(infile) as f:
             record["location"] = line[71:80].strip()
 
         elif "Addr:" in line:
-            parseaddress = line[6:49].partition(";")[0].strip().split(",")
+            parseaddress = line[6:49].partition("&")[0].partition(";")[0].strip().split(",")
             record["addr"] = parseaddress[0]
             record["city"] = "San Luis Obispo"
             record["state"] = "CA"
