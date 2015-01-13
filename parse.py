@@ -1,7 +1,7 @@
 import os, datetime, csv
 
 infile = r'reports.txt'
-outfile = r'2014_partition.csv'
+outfile = r'reports_parsed.csv'
 
 #Create an list aggregator to hold all csv values
 csv_data = []
